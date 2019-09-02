@@ -71,8 +71,8 @@ table {
 #cabecera {
     background-color: white;
     height: 90px;
-    opacity: 0.85;
-    position: fixed;
+    /*opacity: 0.85;
+    position: fixed;*/
     width: 100%;
 	z-index:101;
 }
