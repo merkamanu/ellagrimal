@@ -1,0 +1,550 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	text-align:center;
+	margin:0 auto;
+  	background-color:#fff;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonte/BebasNeue-webfont.eot');
+    src: url('fonte/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonte/BebasNeue-webfont.woff') format('woff'),
+         url('fonte/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonte/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#contenedor{
+	margin: 3em auto 0;
+	min-height: 90%;
+}
+#cabecera {
+    background-color: white;
+    height: 90px;
+    opacity: 0.85;
+    position: fixed;
+    width: 100%;
+	z-index:101;
+}
+.logo{
+   	float: left;
+    height: 95px;
+    margin-left: 6em;
+    width: 195px;
+}
+#contenido{
+	width:100%;
+	margin: 3em auto 0;
+	overflow:auto;
+	padding-bottom: 2em;
+}
+.col-1{
+	float: left;
+	margin-left:2%;
+}
+.col-1-fin{
+	float: left;
+	margin-right:1.5em;
+	margin-left:2%;
+	
+}
+.col-2{
+	float: left;
+	margin-top:2%;
+	margin-left:2%;
+}
+.ancho-15{
+	width:15%;
+}
+.ancho-22{
+	width:22%;
+}
+.ancho-24{
+	width:24%;
+}
+.ancho-28{
+	width:28%;
+}
+.ancho-40{
+	width:40%;
+}
+.ancho-47{
+	width:46%;
+}
+.fotosPequenas{
+	margin-left:2em;
+}
+.fotosPequenas img {
+    float: left;
+    max-height: 100%;
+    width: 100%;
+}
+.oculto{
+	visibility:hidden;
+}
+#trabajos{
+	padding-top:6em;
+}
+#trabajos img{
+	float:left;
+	width:100%;
+	max-height:100%;
+}
+#trabajos img:hover{
+	float:left;
+	opacity: 0.7;
+	width:98%;
+	max-height:98%;
+}
+#trabajos img:hover .oculto{
+	visibility:visible;
+}
+.right{
+	float:right;
+}
+.cerrar {
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.colocarBT{
+	margin:0.3em;
+	display:inline-block;
+	float:left;
+	}
+.colocarTitulo {
+    display: inline-block;
+    float: left;
+    margin: 0.2em 0.2em 0.2em 1em;
+}
+.logoFace{
+	float:left;
+	margin-top:1em;
+	margin-left:2em;
+}
+.cv{
+	float:left;
+	margin-top:1em;
+	margin-left:1em;
+    visibility: hidden;
+}
+.megustaFace {
+    float: right;
+    margin-right: 1em;
+    margin-top: 2px;
+}
+.descargaBaraja{
+	float: left;
+    margin-top: -5em;
+}
+.anterior a {
+    color: #333333;
+    float: left;
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.anterior a img{
+	float: left;
+}
+
+.anterior a:hover{
+	color: #55A3FF;
+    float: left;
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.siguiente a {
+    color: #333333;
+    float: left;
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.siguiente a img{
+}
+
+.siguiente a:hover{
+	color: #55A3FF;
+    float: left;
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/*GALERIA--------------*/
+#gallery {padding-top: 6em;}
+#image {
+    background: url("imaxes/loading.gif") no-repeat scroll center center #FFFFFF;
+}
+#image img {
+	/*width:100%;*/
+	max-width:70%;
+}
+
+.imgnav {
+    cursor: pointer;
+    height: 375px;
+	margin-top: 25%;
+    position: absolute;
+    width: 20%;
+    z-index: 100;
+}
+#previmg {
+    background: url("imaxes/left.gif") no-repeat scroll left center transparent;
+    left: 20px;
+}
+#previmg:hover {opacity:1; filter:alpha(opacity=80)}
+#nextimg {
+    background: url("imaxes/right.gif") no-repeat scroll right center transparent;
+    right: 20px;
+}
+#nextimg:hover {opacity:1; filter:alpha(opacity=80)}
+/*--------------------------------------------------------------------*/
+.fraseMitica {
+    color: #FFFFFF;
+    float: left;
+    font-family: 'BebasNeueRegular',monospace,Geneva,sans-serif;
+    font-size: 3em;
+    line-height: 1.2;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 25%;
+    position: absolute;
+    text-align: left;
+    z-index: 105;
+}
+
+.separador{
+	clear:both;
+	height:2em;
+	width:100%;
+}
+#pie{
+	float: left;
+    margin-left: 1.5em;
+    width: 98%;
+	position: relative;
+	/*margin-top: -180px;  negative value of footer height */
+	height: 50px;
+	clear:both;
+}
+#raya{
+	height:2px;
+	background-color:#333;
+	width:100%;
+}
+#textoPieIzq{
+	float:left;
+	margin-top: 0.5em;
+	color:#333;
+	font-size:0.7em;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-left:1em;
+}
+#textoPieDch{
+	float:right;
+	margin-top: 0.5em;
+	color:#333;
+	font-size:0.7em;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-right:1em;	
+}
+.tituloDescrip {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    height: 1.3em;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    text-decoration: none;
+}
+h1 {
+    color: #333333;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 3.8em;
+}
+h2 {
+    clear: left;
+    color: #333333;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-left: 4.8em;
+    margin-top: 0.4em;
+}
+.posicionDescripcion{
+	 margin-left: 2em;
+	
+}
+.descripcion {
+    color: #333333;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    margin-left: 2em;
+    margin-top: 0.5em;
+    text-align: left;
+    width: 100%;
+}
+
+/* EMPIEZA EL MENU*/
+
+#posicionMenu {
+    float: right;
+    margin-top: 1em;
+    width: 27em;
+}
+#posicionMenu li{
+	float:left;
+}
+
+.menuIngles{
+	color: #333333;
+    float: left;
+    font-family: 'BebasNeueRegular',Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin-right: 2em;
+    margin-top: 0.2em;
+    text-decoration: none;
+	clear:both;
+}
+
+.menu a{
+	color: #333333;
+    float: left;
+    font-family: 'BebasNeueRegular',Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-right: 2em;
+    margin-top: 0.6em;
+    text-decoration: none;
+}
+
+.menu a:hover{
+	color: #55A3FF;
+    float: left;
+    font-family: 'BebasNeueRegular',Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-right: 2em;
+    margin-top: 0.6em;
+    text-decoration: none;
+	
+}
+
+.menu .seleccionado{
+	color:#55A3FF;!important;
+}
+
+
+/*------- TERMINA EL MENU------------*/
+
+#redesSociales{
+	float:left;
+	margin-left: 3.7em;
+}
+#redesSociales ul li{
+	float:left;
+	margin-right: 5px;
+}
+
+.texto{
+	color: #565656;
+    float: left;
+    font-family: 'BebasNeueRegular',monospace,Geneva,sans-serif;
+    font-size: 1.1em;
+	text-align:left;
+	line-height: 1.2;
+}
+.texto a{
+	color:#0081D2;
+	text-decoration:underline;
+}
+
+/*--------Aqui empieza el formulario*/
+
+.contacto {
+    color: #333333;
+    float: left;
+    font-family: 'BebasNeueRegular',monospace,Geneva,sans-serif;
+    font-size: 3em;
+    line-height: 1.2;
+    margin-left: 5%;
+    margin-top: 8%;
+    text-align: left;
+}
+
+.name, .email, .direccion, .telefono{
+	float:left;
+	width: 427px;
+}
+#formulario {
+    float: left;
+    margin-left: 8em;
+    margin-top: 9%;
+    width: 27em;
+}
+
+input, textarea { 
+	float:right;
+	margin-bottom: 15px;
+	padding: 7px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 12px/100% Verdana, Tahoma, sans-serif;
+	width: 300px;
+	background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 15, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 15px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 5px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 5px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 5px;
+	}
+
+textarea { 
+	width: 410px;
+	max-width: 410px;
+	height: 75px;
+	line-height: 150%;
+	}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus { 
+	border-color: #0081D2; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+
+.form label { 
+	color: #565656;
+    float: left;
+    margin-right: 10px;
+	font-family: Verdana,Geneva,sans-serif;
+    font-size: 1em;
+	margin-bottom: 10px;
+	}
+
+.submit input {
+	width: auto;
+	padding: 9px 15px;
+	background: #0081D2;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+
+.submit input:hover {
+	cursor:pointer;
+	}
+
+/*--------Fin del formulario*/
+
+
+
+
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {margin:0;padding:0;} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 180px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -180px; /* negative value of footer height */
+	height: 180px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+
+*/
