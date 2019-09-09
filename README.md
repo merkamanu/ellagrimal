@@ -1,3 +1,3 @@
 # Menos es más
 
-Cosas deseñadas por el Lagrimal en https://merkamanu.github.io/ellagrimal/
+Cosas diseñadas por el Lagrimal en https://merkamanu.github.io/ellagrimal/
