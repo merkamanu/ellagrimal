@@ -1,0 +1,151 @@
+$co-0:#FFFFFF;
+$co-1:#333333;
+$co-2:#d39e00;
+
+@mixin texto($familia,$size,$color,$peso) {
+    font-family:$familia , sans-serif;
+    font-size: $size;
+    color: $color;
+    font-weight: $peso;
+}
+
+
+
+main > .container {
+    padding: 65px 15px 0;
+}
+
+main > .container-fluid {
+    padding: 65px 15px 0;
+}
+
+.footer{
+    @include texto('Muli',0.8em,$co-1,400);
+    border-top: 2px solid $co-1;
+    margin: 0 2em;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+body{
+    @include texto('Muli',1rem,$co-1,400);
+}
+
+.txtIntermedio{
+    @include texto('Muli',1rem,$co-1,700);
+}
+
+.txtDestacado{
+    @include texto('Muli',1.5rem,$co-1,900);
+}
+.titular{
+    @extend .txtDestacado;
+}
+.navbar{
+    &.fixed-top{
+        background-color: $co-0;
+    }
+}
+.navbar-nav{
+    .nav-item{
+        .nav-link{
+            @include texto('Muli',1rem,$co-1,900);
+
+            &:hover{
+                @include texto('Muli',1rem,$co-1,900);
+            }
+
+            .txtSecundario{
+                @include texto('Muli',0.7rem,lighten($co-1,30%),400);
+            }
+
+        }
+        &.active{
+            .nav-link{
+                color:$co-2;
+                cursor: default;
+            }
+        }
+    }
+}
+
+.galeria{
+    a:hover{
+        opacity: 0.8;
+    }
+}
+
+
+/* Modificaciones sobre el Breadcrum---------------*/
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .2rem !default;
+$breadcrumb-padding-x:              1.6rem !default;
+$breadcrumb-item-padding:           .5rem !default;
+
+$breadcrumb-margin-bottom:          1rem !default;
+
+$breadcrumb-bg:                     transparent !default;
+$breadcrumb-divider-color:          $co-1 !default;
+$breadcrumb-active-color:           $co-2 !default;
+$breadcrumb-divider:                quote("/") !default;
+
+$breadcrumb-border-radius:          2px !default;
+
+
+
+.breadcrumb {
+    @include texto('Muli', 0.8em, $co-1, 400);
+    display: flex;
+    flex-wrap: wrap;
+    padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+    margin-bottom: $breadcrumb-margin-bottom;
+    list-style: none;
+    background-color: $breadcrumb-bg;
+    //@include border-radius($breadcrumb-border-radius);
+}
+
+.breadcrumb-item {
+
+    // The separator between breadcrumbs (by default, a forward-slash: "/")
+    + .breadcrumb-item {
+        padding-left: $breadcrumb-item-padding;
+
+        &::before {
+            display: inline-block; // Suppress underlining of the separator in modern browsers
+            padding-right: $breadcrumb-item-padding;
+            color: $breadcrumb-divider-color;
+            content: $breadcrumb-divider;
+        }
+    }
+
+    // IE9-11 hack to properly handle hyperlink underlines for breadcrumbs built
+    // without `<ul>`s. The `::before` pseudo-element generates an element
+    // *within* the .breadcrumb-item and thereby inherits the `text-decoration`.
+    //
+    // To trick IE into suppressing the underline, we give the pseudo-element an
+    // underline and then immediately remove it.
+    + .breadcrumb-item:hover::before {
+        text-decoration: underline;
+    }
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    + .breadcrumb-item:hover::before {
+        text-decoration: none;
+    }
+
+    &.active {
+        @include texto('Muli',0.8rem,$breadcrumb-active-color,900);
+    }
+    
+    a{
+        color:$co-1;
+    }
+}
+/* Modificaciones sobre el Breadcrum---------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap');
+@import "bootstrap.css";
+@import "all.css"; // aquí los iconos de fontawesome. Dentro del archivo se hace referencia a las fuentes.

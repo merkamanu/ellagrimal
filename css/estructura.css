@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap");
+@import url(bootstrap.css);
+@import url(all.css);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000314}}
+main > .container {
+  padding: 65px 15px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000318}}
+main > .container-fluid {
+  padding: 65px 15px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000322}}
+.footer {
+  font-family: "Muli", sans-serif;
+  font-size: 0.8em;
+  color: #333333;
+  font-weight: 400;
+  border-top: 2px solid #333333;
+  margin: 0 2em;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000330}}
+body {
+  font-family: "Muli", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  font-weight: 400; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000334}}
+.txtIntermedio {
+  font-family: "Muli", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  font-weight: 700; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000338}}
+.txtDestacado, .titular {
+  font-family: "Muli", sans-serif;
+  font-size: 1.5rem;
+  color: #333333;
+  font-weight: 900; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000345}}
+.navbar.fixed-top {
+  background-color: #FFFFFF; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000351}}
+.navbar-nav .nav-item .nav-link {
+  font-family: "Muli", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  font-weight: 900; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000354}}
+  .navbar-nav .nav-item .nav-link:hover {
+    font-family: "Muli", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    font-weight: 900; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000358}}
+  .navbar-nav .nav-item .nav-link .txtSecundario {
+    font-family: "Muli", sans-serif;
+    font-size: 0.7rem;
+    color: gray;
+    font-weight: 400; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000364}}
+.navbar-nav .nav-item.active .nav-link {
+  color: #d39e00;
+  cursor: default; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000373}}
+.galeria a:hover {
+  opacity: 0.8; }
+
+/* Modificaciones sobre el Breadcrum---------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\0000398}}
+.breadcrumb {
+  font-family: "Muli", sans-serif;
+  font-size: 0.8em;
+  color: #333333;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0.2rem 1.6rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\00003112}}
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.5rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\00003115}}
+  .breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #333333;
+    content: "/"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\00003129}}
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: underline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\00003134}}
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\00003138}}
+.breadcrumb-item.active {
+  font-family: "Muli", sans-serif;
+  font-size: 0.8rem;
+  color: #d39e00;
+  font-weight: 900; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Eu\/TRABALLOS\/WebElLagrimal\/Nova\/css\/estructura\.scss}line{font-family:\00003142}}
+.breadcrumb-item a {
+  color: #333333; }
+
+/* Modificaciones sobre el Breadcrum---------------*/
+
+/*# sourceMappingURL=estructura.css.map */
