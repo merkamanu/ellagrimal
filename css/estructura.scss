@@ -138,12 +138,12 @@ body{
     
         opacity: 0.8;
     }*/
-    .col{
+    .col.brilli{
         @include zoom;
         @include shine;
     }
    
-}
+} 
 
 
 /* Modificaciones sobre el Breadcrum---------------*/
